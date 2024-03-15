@@ -1,0 +1,143 @@
+﻿@font-face {
+  font-family: "Material Design Icons";
+  font-display: swap;
+  src: url("../../../lib/MaterialDesign-Webfont/fonts/materialdesignicons-webfont.eot?v=5.3.45");
+  src: url("../../../lib/MaterialDesign-Webfont/fonts/materialdesignicons-webfont.eot?#iefix&v=5.3.45") format("embedded-opentype"), url("../../../lib/MaterialDesign-Webfont/fonts/materialdesignicons-webfont.woff2?v=5.3.45") format("woff2"), url("../../../lib/MaterialDesign-Webfont/fonts/materialdesignicons-webfont.woff?v=5.3.45") format("woff"), url("../../../lib/MaterialDesign-Webfont/fonts/materialdesignicons-webfont.ttf?v=5.3.45") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.mdi:before, .mdi-set, .mdi-arrow-right-bold {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mdi-record-circle-outline::before {
+  content: "\f0ec3";
+}
+
+.mdi-map-marker-radius::before {
+  content: "\f0352";
+}
+
+.mdi-calendar::before {
+  content: "\f00ed";
+}
+
+.mdi-plus-circle-outline::before {
+  content: "\f0419";
+}
+
+.mdi-minus-circle-outline::before {
+  content: "\f0377";
+}
+
+.mdi-asterisk::before {
+  content: "\f06c4";
+}
+
+.mdi-city::before {
+  content: "\f0146";
+}
+
+.mdi-bus::before {
+  content: "\f00e7";
+}
+
+.mdi-flag::before {
+  content: "\f023b";
+}
+
+.mdi-map-marker-multiple::before {
+  content: "\f0350";
+}
+
+.mdi-clock-outline::before {
+  content: "\f0150";
+}
+
+.mdi-cellphone-android::before {
+  content: "\f011d";
+}
+
+.mdi-star::before {
+  content: "\f04ce";
+}
+
+.mdi-flag-triangle::before {
+  content: "\f023f";
+}
+
+.mdi-tag-heart::before {
+  content: "\f068b";
+}
+
+.mdi-flag-outline::before {
+  content: "\f023d";
+}
+
+.mdi-calendar-check::before {
+  content: "\f00ef";
+}
+
+.mdi-arrow-left-bold::before {
+  content: "\f0731";
+}
+
+.mdi-chevron-left::before {
+  content: "\f0141";
+}
+
+.mdi-chevron-right::before {
+  content: "\f0142";
+}
+
+.mdi-arrow-right-bold::before {
+  content: "\f0734";
+}
+
+.mdi-menu-down::before {
+  content: "\f035d";
+}
+
+.mdi-menu-right::before {
+  content: "\f035f";
+}
+
+.mdi-menu-up::before {
+  content: "\f0360";
+}
+
+.mdi-airplane::before {
+  content: "\f001d";
+}
+
+.mdi-radiobox-marked::before {
+  content: "\f043e";
+}
+
+.mdi-radiobox-blank::before {
+  content: "\f043d";
+}
+
+.mdi-rotate-45:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.mdi-close::before {
+  content: "\f0156";
+}
+
+.mdi-wallet-travel::before {
+  content: "\f0587";
+}
+
+.mdi-chevron-double-down::before {
+  content: "\f013c";
+}

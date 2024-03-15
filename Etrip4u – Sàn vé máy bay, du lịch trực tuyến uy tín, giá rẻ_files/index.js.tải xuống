@@ -1,0 +1,81 @@
+﻿function initSearchBoxTour(elementId, domain, isSticky) {
+    if (!isSticky) {
+        isSticky = false;
+    }
+
+    if (!elementId) {
+        elementId = "#search-box-tour";
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        getSearchBoxContent(elementId, domain, false, isSticky);
+    });
+}
+function initSearchBoxFlight(elementId, domain, isSticky) {
+    if (!isSticky) {
+        isSticky = false;
+    }
+
+    if (!elementId) {
+        elementId = "#flight-search-box";
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        getSearchBoxContent(elementId, domain, true, isSticky);
+    });
+}
+
+function getSearchBoxContent(elementId, domain, isflightSearchBox, isSticky, ) {
+    $(elementId).load(
+        `${domain}/integrate/searchbox?isSticky=${isSticky}`,
+        function () {
+            //initDependencySearchBox(elementId, domain);
+            if (isflightSearchBox) {
+                initDependencyFlightSearchBox(elementId, domain);
+            }
+            else {
+                initDependencyTourSearchBox(elementId, domain)
+            }
+        }
+    );
+}
+
+function initDependencyFlightSearchBox(elementId, domain) {
+    let dependencyUrl = `${domain}/Scripts/src/dist/search-box.index.bundle.js?ver=1.0.111`;
+    onDemandScript(dependencyUrl, function () {
+     
+        var vue = new Vue({
+            el: elementId,
+            data: {},
+            components: {},
+            methods: {},
+            mounted: function () { },
+        });
+    });
+}
+
+function initDependencyTourSearchBox(elementId, domain) {
+    let dependencyUrl = `${domain}/js/search-box/all.js?ver=1.0.111`;
+    onDemandScript(dependencyUrl, function () {
+
+        var vue = new Vue({
+            el: elementId,
+            data: {},
+            components: {},
+            methods: {},
+            mounted: function () { },
+        });
+    });
+}
+
+function onDemandScript(url, callback) {
+    callback = (typeof callback != 'undefined') ? callback : {};
+
+    $.ajax({
+        type: "GET",
+        url: url,
+        success: callback,
+        dataType: "script",
+        cache: true
+    });
+}
